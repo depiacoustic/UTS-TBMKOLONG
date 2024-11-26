@@ -1,0 +1,577 @@
+ *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+body {
+    background-color: white; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.welcome-section {
+    background-image: url('img/bbk.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to center content */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    text-align: left; /* Center text */
+    padding: 20px; /* Add some padding */
+    position: relative; /* Position relative for overlay */
+}
+
+.welcome-section h1 {
+    font-size: 50px; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+}
+
+.welcome-section p {
+    font-size: 19px; 
+}
+nav{
+  background: #506D2F;
+  background-size: cover;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 13px 19px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #A0522D;
+  transition: 2s;
+} 
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+ @media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+
+section .konten{
+    background-color: #506D2F;
+}
+
+ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #A0522D;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0,5s;
+  }
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+
+nav ul li a{
+    font-size: 20px;
+}
+  
+a:hover, a.active{
+    background: none;
+    color: #3A0304;
+}
+  
+#check:checked ~ ul{
+    left: 0;
+  }
+
+.section{
+    background color: white no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px)}
+}
+
+.importance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #506D2F; /* Warna latar belakang */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.importance-container:hover {
+    background-color:#A0522D; /* Warna saat kursor di atas container */
+    color: white;
+}
+
+.importance-overview {
+    text-align: center;
+    background-color: white; /* Warna latar belakang untuk judul */
+    color: black;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+.importance-overview h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Garamond', serif;
+}
+
+.importance-content {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.importance-content p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 20px;
+    color: white;
+    font-family: Garamond, serif;
+    text-align: justify;
+}
+.container {
+    text-align: center;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #506D2F; /* Warna latar belakang */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+
+.container: 
+}
+
+.news-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #A0522D;
+    border-radius: 10px;
+}
+
+.news-section h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.news-card {
+    background-color: #506D2F;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-content {
+    padding: 15px;
+}
+
+.news-content .date {
+    font-size: 14px;
+    color: white;
+}
+
+.news-content h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+
+.news-content:hover{
+    background-color: #A0522D;
+}
+.news-content .read-more {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-content .read-more:hover {
+    text-decoration: underline;
+}
+
+.view-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.view-more:hover {
+    background-color: #d62828;
+}
+
+@media (max-width: 768px) {
+    .news-section {
+        padding: 10px; /* Kurangi padding agar lebih ringkas */
+    }
+
+    .news-container {
+        flex-direction: column; /* Tampilkan kartu berita dalam kolom */
+        gap: 10px; /* Kurangi jarak antar kartu */
+        padding: 10px;
+    }
+
+    .news-card {
+        width: 100%; /* Setel kartu agar menyesuaikan lebar layar */
+    }
+
+    .news-card img {
+        height: auto; /* Sesuaikan tinggi gambar */
+    }
+
+    .news-content h2 {
+        font-size: 16px; /* Ukuran judul lebih kecil */
+        text-align: center; /* Pusatkan judul untuk layar kecil */
+    }
+
+    .news-content .date {
+        font-size: 12px; /* Ukuran tanggal lebih kecil */
+    }
+
+    .news-content .read-more {
+        font-size: 12px; /* Ukuran tombol lebih kecil */
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #white;
+    padding: 10px;
+    border-top: 1px solid #506D2F;
+    margin-top: 20px;
+    background-color: #506D2F;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+.a {
+   color: #007bff;
+   text-decoration: none;
+}
+.a:hover {
+   text-decoration: underline;
+}
+
+.gallery-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #506D2F;
+    border-radius: 20px;
+}
+
+.gallery-preview h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.scroll-container {
+    background-color: #506D2F;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.scroll-container img {
+    height: 250px; 
+    width: auto; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.scroll-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.location-and-contact {
+    display: flex; /* Mengatur layout menjadi fleksibel (berdampingan) */
+    gap: 20px; /* Jarak antara peta dan kontak */
+    align-items: flex-start; /* Elemen sejajar di bagian atas */
+    margin-top: 20px;
+}
+
+.map {
+    flex: 1; 
+}
+
+.contact {
+    flex: 1; /* Kontak mengambil ruang lebih kecil */
+    background-color: #f9f9f9; /* Warna latar belakang untuk membedakan */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    color: #003366;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .location-and-contact {
+        flex-direction: column; /* Ubah menjadi vertikal */
+    }
+}
+
+.social-media {
+    display: flex;
+    gap: 10px; /* Jarak antar ikon */
+    margin-top: 10px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.social-media .facebook {
+    background-color: #3b5998;
+}
+
+.social-media .facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-media .twitter {
+    background-color: #1da1f2;
+}
+
+.social-media .twitter:hover {
+    background-color: #0d95e8;
+}
+
+.social-media .instagram {
+    background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+}
+
+.social-media .instagram:hover {
+    background: radial-gradient(circle at 30% 30%, #eeb76e, #c1236d, #822db7, #3d4fcf);
+}
+
+.social-media i {
+    font-size: 20px;
+    color: black;
+}
+
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #506D2F;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+textarea {
+    resize: none; /* Menonaktifkan resize */
+}
+
+input[type="submit"] {
+    background-color: #506D2F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #A0522D;
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        padding: 15px; 
+        margin: 10px; 
+    }
+
+    .form-container h2 {
+        font-size: 18px; 
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        font-size: 14px; 
+        padding: 8px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px; 
+        padding: 8px;
+    }
+}
