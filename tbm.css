@@ -20,7 +20,7 @@ body, html {
 }
 
 .welcome-section {
-    background-image: url('img/bbk.jpg'); 
+    background-image: url('bbk.jpg'); 
     background-size: cover; 
     background-position: center; 
     height: 100vh; /* Full viewport height */
